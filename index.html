@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container apresentar">
+        <section class="cadastro">
+            <h1>Cadastro de Usuários</h1>
+
+            <p class="descricao">
+                Preencha os campos abaixo para cadastrar um novo usuário.
+            </p>
+
+            <form id="formCadastro">
+
+                <div class="campo">
+                    <label for="nome">Nome completo</label>
+                    <input
+                        type="text"
+                        id="nome"
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                        maxlength="150"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="exemplo@email.com"
+                        required
+                        maxlength="254"
+                    >
+                </div>
+
+                <button type="submit" id="btnCadastrar">
+                    Cadastrar usuário
+                </button>
+
+                <div id="mensagem" role="status" aria-live="polite"></div>
+
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
