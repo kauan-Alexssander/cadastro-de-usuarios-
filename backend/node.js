@@ -1,0 +1,18 @@
+
+{
+    "name": "cadastro-usuarios",
+    "version": "1.0.0",
+    "description": "API para cadastro de usuários utilizando Node.js, Express e MySQL",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "dev": "node --watch server.js"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.4.7",
+        "express": "^4.21.2",
+        "mysql2": "^3.12.0"
+    }
+}
+
